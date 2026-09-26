@@ -1,0 +1,12 @@
+[
+{"name":"Thoughtworks","narrative":"AI that works; Rebuild, Rewire, Reimagine","focus":"Modernization, agents, data, product engineering","sv_gap":"More explicit business-system leverage"},
+{"name":"EPAM","narrative":"AI/Run.Transform","focus":"Engineering, consulting, AI platforms, modernization","sv_gap":"Narrower diagnostic entry"},
+{"name":"Globant","narrative":"AI Pods + human expertise","focus":"Digital, AI Pods, industry solutions","sv_gap":"Own business-system orchestration"},
+{"name":"Cognizant","narrative":"Agentic Enterprise Services","focus":"Enterprise functions, agents, cloud, data","sv_gap":"Bespoke workflow-first entry"},
+{"name":"Searce","narrative":"AI Outcome Engineering","focus":"Cloud, data, AI, outcome delivery","sv_gap":"Differentiate through orchestration model"},
+{"name":"Publicis Sapient","narrative":"Turn AI investment into real returns","focus":"Business transformation, experience, technology","sv_gap":"More technical/systemic"},
+{"name":"Quantiphi","narrative":"AI-first digital engineering","focus":"AI agents, data, engineering","sv_gap":"Business workflow orchestration"},
+{"name":"BCG / BCG X","narrative":"Value from AI","focus":"Strategy, workflow redesign, AI products","sv_gap":"Execution-native alternative"},
+{"name":"Accenture","narrative":"Reinvention","focus":"Strategy, industry, technology, operations, AI","sv_gap":"Focused and experimental"},
+{"name":"Genpact","narrative":"AI-led operations","focus":"Process transformation, operations, AI","sv_gap":"Cross-system orchestration, not outsourcing"}
+]
