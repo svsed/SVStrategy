@@ -33,7 +33,7 @@ def build():
         body = markdown_to_html(md.read_text(encoding="utf-8"))
         nav = "".join(f'<a href="{href}">{label}</a>' for href,label in NAV)
         target.write_text(
-            f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(md.stem)} | SV Strategy</title><link rel="stylesheet" href="assets/style.css"></head><body><header class="top"><a class="brand" href="index.html">SV<span>Strategy</span></a><nav>{nav}</nav></header><main class="wrap"><div class="prose">{body}</div></main><footer class="footer">Research cut-off: 26 Sep 2026</footer></body></html>',
+            f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(md.stem)} | Systems Valley Strategy</title><link rel="stylesheet" href="assets/style.css"></head><body><header class="top"><a class="brand" href="index.html">Systems Valley<span>Strategy</span></a><nav>{nav}</nav></header><main class="wrap"><div class="prose">{body}</div></main><footer class="footer">Research cut-off: 26 Sep 2026</footer></body></html>',
             encoding="utf-8"
         )
 
