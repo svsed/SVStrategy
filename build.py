@@ -121,7 +121,7 @@ def build():
         target = SITE / (md.stem + ".html")
         source = md.read_text(encoding="utf-8")
         body = markdown_to_html(source)
-        nav = "".join(f'<a href="{href}">{label}</a>' for href,label in NAV)
+        nav = ""
         current = md.stem + ".html"
         idx = next((i for i,(href,_) in enumerate(PARTS) if href == current), -1)
         sidebar_items = "".join(
@@ -137,9 +137,25 @@ def build():
             next_label = PARTS[idx+1][1] if idx < len(PARTS)-1 else "Overview"
             prevnext = f'<div class="sequence-nav"><a href="{prev_link}">← {prev_label}</a><a href="{next_link}">{next_label} →</a></div>'
         target.write_text(
-            f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(md.stem)} | Systems Valley Strategy</title><meta name="description" content="{html.escape(SUMMARIES[idx])}"><link rel="stylesheet" href="assets/style.css"></head><body><header class="top"><a class="brand" href="index.html">Systems Valley<span>Strategy</span></a><nav>{nav}</nav></header><div class="strategy-layout">{sidebar}<main class="strategy-content"><div class="part-meta">PART {idx+1:02d} / 16 <span>STRATEGY SYSTEM</span></div><div class="hero compact"><h1>{html.escape(md.stem.replace("-", " ").title())}</h1><p>Systems Valley Strategy</p></div><section class="visual-section">{visual_intro(idx)}</section><details class="research-notes"><summary>Research notes</summary><div class="prose">{body}</div></details>{prevnext}</main></div><footer class="footer">Research cut-off: 26 Sep 2026 · <a href="sources.html">Source register</a></footer></body></html>',
+            f'<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(md.stem)} | Systems Valley Strategy</title><meta name="description" content="{html.escape(SUMMARIES[idx])}"><link rel="stylesheet" href="assets/style.css"></head><body><header class="top"><a class="brand" href="index.html">Systems Valley<span>Strategy</span></a><div class="top-note">Strategy system · 16 parts</div></header><div class="strategy-layout">{sidebar}<main class="strategy-content"><div class="part-meta">PART {idx+1:02d} / 16 <span>STRATEGY SYSTEM</span></div><div class="hero compact"><h1>{html.escape(md.stem.replace("-", " ").title())}</h1><p>Systems Valley Strategy</p></div><section class="visual-section">{visual_intro(idx)}</section><details class="research-notes"><summary>Research notes</summary><div class="prose">{body}</div></details>{prevnext}</main></div><footer class="footer">Research cut-off: 26 Sep 2026 · <a href="sources.html">Source register</a></footer></body></html>',
             encoding="utf-8"
         )
 
 if __name__ == "__main__":
-    build()
+    build()def rail(current):
+    groups=[
+      ("01 · Understand the market",[(PARTS[0],"Changing industry landscape"),(PARTS[2],"Regional realities"),(PARTS[5],"Competitive landscape")]),
+      ("02 · Understand the customer",[(PARTS[1],"Customer profiles"),(PARTS[3],"Real customer needs"),(PARTS[4],"Solution patterns"),(PARTS[15],"Customer intelligence map")]),
+      ("03 · Define Systems Valley",[(PARTS[6],"Strategic insights"),(PARTS[7],"Category & whitespace"),(PARTS[8],"Winning narrative"),(PARTS[14],"Underlying rule")]),
+      ("04 · Design the experience",[(PARTS[9],"Digital touchpoints"),(PARTS[10],"Website architecture"),(PARTS[11],"Interactions & stories"),(PARTS[12],"Case studies")]),
+      ("05 · Commercialise",[(PARTS[13],"Commercial funnel")])
+    ]
+    chunks=['<aside class="strategy-rail"><div class="rail-title">Systems Valley Strategy</div><a class="rail-overview '+('active' if current=="index.html" else '')+'" href="index.html"><span>00</span>Overview</a>']
+    for title,items in groups:
+        chunks.append('<div class="rail-group"><div class="rail-group-title">'+html.escape(title)+'</div>')
+        for href,label in items:
+            chunks.append(f'<a class="rail-item {"active" if href[0]==current else ""}" href="{href[0]}"><span>{PARTS.index(href)+1:02d}</span>{html.escape(label)}</a>')
+        chunks.append('</div>')
+    chunks.append('</aside>')
+    return ''.join(chunks)
+
