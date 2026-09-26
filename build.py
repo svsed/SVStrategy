@@ -1,5 +1,5 @@
 from pathlib import Path
-import html
+import html, re
 
 ROOT = Path(__file__).parent
 RESEARCH = ROOT / "research"
