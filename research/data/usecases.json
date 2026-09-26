@@ -1,0 +1,7 @@
+[
+{"name":"Collections next-best-action","systems":["ERP","AR","CRM","Documents","Email"],"human":"Collector owns negotiation and escalation","kpis":["DSO","productivity","promise-to-pay"]},
+{"name":"Demand-to-supply","systems":["CRM","ERP","SCM","External signals"],"human":"Planner owns material trade-offs","kpis":["forecast","inventory","exception latency"]},
+{"name":"Quote-to-conversion","systems":["CRM","Product data","CPQ","Documents","Email"],"human":"Seller owns commercial judgement","kpis":["response time","win rate","sales cycle"]},
+{"name":"Service exception","systems":["CRM","Service","Telemetry","ERP"],"human":"Critical decisions remain human","kpis":["SLA","resolution time","parts availability"]},
+{"name":"AI pilot-to-production fabric","systems":["AI apps","Data","Identity","Governance","Workflows"],"human":"Governance and policy ownership","kpis":["time-to-production","reuse","risk"]}
+]
