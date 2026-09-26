@@ -1,0 +1,19 @@
+region,sector,company,profile,industry,status,why_fit
+US,Manufacturing,ProAmpac,Complex Operator,Packaging,Private/global,Multi-site packaging manufacturing
+US,Manufacturing,Novolex,Complex Operator,Packaging,Private/global,Packaging manufacturing footprint
+US,Industrial,Jabil,Complex Operator,Manufacturing services,Public,Supply chain and production complexity
+US,Distribution,W.W. Grainger,Complex Operator,Industrial distribution,Public,Catalog sales fulfillment and supply chain
+UK,Packaging,Macfarlane Group,Complex Operator,Packaging distribution,Public,Multi-site packaging
+UK,Industrial,IMI plc,Complex Operator,Engineering,Public,Complex global value chain
+Germany,Industrial,Krones,Complex Operator,Industrial machinery,Public,Manufacturing and service ecosystem
+Germany,Industrial,Schaeffler,Complex Operator,Automotive/industrial,Public,Global manufacturing and supply chain
+France,Industrial,Schneider Electric,Transformation-Ready,Energy management,Public,Large enterprise systems
+India,Packaging,UFlex,Complex Operator,Packaging,Public,Integrated packaging and global footprint
+India,Packaging,EPL Limited,Complex Operator,Packaging,Public,Global packaging footprint
+India,Packaging,TCPL Packaging,Complex Operator,Packaging,Public,Growing packaging and exports
+India,Healthcare,Narayana Health,Complex Operator,Hospitals,Public,Multi-site clinical workflows
+Singapore,Logistics,YCH Group,Complex Operator,Supply chain,Private,Regional logistics complexity
+Australia,Industrial,Orica,Complex Operator,Mining services,Public,Global industrial operations
+Japan,Industrial,Daifuku,Complex Operator,Automation/logistics,Public,Global manufacturing and service
+China,Packaging,Nine Dragons Paper,Complex Operator,Paper/packaging,Public,Large manufacturing footprint
+China,Industrial,Midea Group,Transformation-Ready,Consumer/industrial,Public,Global manufacturing ecosystem
