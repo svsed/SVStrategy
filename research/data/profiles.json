@@ -1,0 +1,7 @@
+[
+{"id":"complex-operator","name":"Complex Operator","size":"500-20000 employees","buyers":["CEO/Owner","COO","CIO/CTO","CFO"],"levers":["order-to-cash","planning","procurement","collections","service"],"kpis":["cycle time","OTIF","working capital","revenue/FTE"]},
+{"id":"growth-constrained","name":"Growth-Constrained Business","size":"200-10000 employees","buyers":["CEO","CRO","CMO"],"levers":["lead intelligence","next-best-action","proposal","expansion"],"kpis":["win rate","sales cycle","pipeline velocity","NRR"]},
+{"id":"scale-constrained","name":"Scale-Constrained Business","size":"100-10000 employees","buyers":["CEO","COO","CFO"],"levers":["workflow automation","knowledge agents","exception routing"],"kpis":["revenue/FTE","cost/transaction","cycle time"]},
+{"id":"transformation-ready","name":"Transformation-Ready Enterprise","size":"2000-100000+ employees","buyers":["CIO","CTO","Chief Data/AI Officer"],"levers":["agent orchestration","governance","workflow redesign"],"kpis":["AI production","reuse","time-to-value"]},
+{"id":"new-business","name":"New Business / New Venture","size":"50-5000 employees","buyers":["Founder/CEO","CPO","CTO"],"levers":["AI-native journey","AI-first operations","embedded decisions"],"kpis":["time-to-market","cost-to-serve","conversion"]}
+]
